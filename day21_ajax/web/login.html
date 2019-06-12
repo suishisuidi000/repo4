@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script src="/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#username").blur(function () {
+                var val = $(this).val();
+                $.get("loginServlet",{username:val},function (data) {
+                    var span = $("#span");
+                    if(data.state){
+                      span.css("color","pink");
+                       span.html(data.msc);
+                    }else {
+                        span.css("color","green");
+                        span.html(data.msc);
+                    }
+                })
+            })
+        })
+
+    </script>
+</head>
+<body>
+
+<form>
+    <input type="text" id="username" name="username" placeholder="请输入用户名"><span id="span"></span><br>
+    <input type="text" id="password" name="password" placeholder="请输入用户名"><br>
+    <input type="submit" value="注册登录">
+</form>
+
+</body>
+</html>

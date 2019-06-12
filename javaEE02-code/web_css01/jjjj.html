@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="btn" value="刷新"><!--1 设置输入框-->
+<input type="button" id="bbb" value="切换路径">
+
+<script>
+    var btn = document.getElementById("btn");//根据id 获取元素
+    btn.onclick = function() {//绑定点击事件
+        location.reload();//刷新
+    }
+
+    var href = location.href;
+    alert(href);
+    var bbb = document.getElementById("bbb");
+    bbb.onclick = function () {
+        location.href = "http://www.baidu.com"
+    }
+
+
+</script>
+</body>
+</html>

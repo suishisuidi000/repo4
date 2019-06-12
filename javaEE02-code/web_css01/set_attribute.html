@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+               <a>点我启动</a>
+               <input type="button" id="btn" value="切换界面">
+               <input type="button" id="remove" value="删除属性">
+               <script >
+                   var btn = document.getElementById("btn");
+                   btn.onclick = function () {
+                       var a_ele = document.getElementsByTagName("a")[0];
+                        a_ele.setAttribute("href","img/on.gif");
+                   }
+                   var re_ele = document.getElementById("remove");
+                   re_ele.onclick = function () {
+                       var e_re = document.getElementsByTagName("a")[0];
+                       e_re.removeAttribute("href");
+                   }
+               </script>
+
+
+</body>
+</html>

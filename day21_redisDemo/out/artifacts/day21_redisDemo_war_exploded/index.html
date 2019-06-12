@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $.get("provinceServlet",{},function (data) {
+               $(data).each(function () {
+                   var html = ("<option>--"+this.name+"--</option>");
+                   $("#select").append(html);
+               })
+
+            })
+        })
+
+    </script>
+</head>
+<body>
+<select id="select">
+    <option>--请选择省份--</option>
+</select>
+</body>
+</html>

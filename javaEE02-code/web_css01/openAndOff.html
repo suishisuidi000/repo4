@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>openoff</title>
+</head>
+<body>
+<input id="op" type="button" value="打开新窗口">
+<input id="of" type="button" value="关闭窗口">
+<script>
+
+    var b = confirm("you确定要退出吗?");
+    alert(b);
+    var op = document.getElementById("op");
+    var newwindow;
+    op.onclick = function() {
+        newwindow = open();
+    };
+    var of = document.getElementById("of");
+    of.onclick = function() {
+        newwindow.close();
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json</title>
+    <script src="/jquery-3.3.1.min.js"></script>
+    <script>
+       /* var person = {"name": "zhangsan", "age": 13, "gender": "男"};
+        var name = person.name;
+        alert(name);*/
+        var persons = [{"name": "王五", "age": 13, "gender": "女"},
+                        {"name": "田七", "age": 15, "gender": "女"},
+                        {"name": "赵六", "age": 33, "gender": "男"}
+                        ];
+        alert(persons[2].age);
+
+        for(var i = 0;i<persons.length;i++){
+            var p = persons[i];
+            for(var key in p){
+                alert(p[key])
+            };
+
+        }
+    </script>
+
+</head>
+<body>
+
+
+</body>
+</html>

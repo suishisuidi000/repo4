@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>append</title>
+    <style>
+        div{
+            border: 1px solid red ;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+        }
+        #div2{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="div1">
+    div1
+    <div id="div2">div2</div>
+</div>
+<a id="re_a" href="javascript:void(0)">删除节点</a>
+<input type="button" id="remo" value="消灭子节点">
+<script !src="">
+    var e_a = document.getElementById("re_a");
+    e_a.onclick = function () {
+        var e_div1 = document.getElementById("div1");
+        var e_div2 = document.getElementById("div2");
+        e_div1.removeChild(e_div2);
+    }
+    var e_remo = document.getElementById("remo");
+    e_remo.onclick = function () {
+        var e_div1 = document.getElementById("div1");
+        var e_div2 = document.getElementById("div2");
+        e_div1.removeChild(e_div2);
+    }
+</script>
+</body>
+</html>

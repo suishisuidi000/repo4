@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+            <script>
+
+                window.onload = function () {
+               /*     var user = document.getElementById("username");
+                    user.onblur = function () {
+                        alert("失去焦点");
+                    }
+                 /!*   document.getElementById("username").onmouseover = function () {
+                        alert("鼠标来了");
+                    }*!/
+                    document.getElementById("city").onchange = function () {
+                        alert("内容改变了");
+                    };*/
+
+                    document.getElementById("form").onsubmit = function () {
+
+                        var flag = true;
+                        return flag;
+                    }
+                }
+            </script>
+            <form action="#" id="form">
+            <input id="username" name="username">
+            <select id="city" name="cd">
+                <option>--请选择--</option>
+                <option value="001">北京</option>
+                <option value="002">上海</option>
+                <option value="003">郑州</option>
+            </select>
+
+            <input type="submit" value="提交">
+
+            </form>
+</body>
+</html>

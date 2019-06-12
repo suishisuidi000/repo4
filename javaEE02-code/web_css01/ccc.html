@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习1</title>
+
+
+</head>
+<body>
+<script>
+    /*   var num = Math.floor((Math.random()*100))+1;
+        document.write(num);*/
+    function fun() {
+        var sum = 0 ;
+       for(var i = 0;i<arguments.length;i++){
+           sum+=arguments[i];
+       }
+      return sum;
+    }
+        var num = fun(2,3,4,5,6);
+    document.write(num);
+    var mydate = new Date();
+    document.write(mydate.getTime()+"<br>");//获取1970年到现在的毫秒值
+    document.write(mydate.toLocaleString()+"<br>");//获取当前时间字符串形式中国日期
+    var arr = [1,2,3,4];
+    document.write(arr);//数组长度可变,元素类型可变
+    var reg = new RegExp("^\\w{8,16}$");
+    var reg2 =/^\w{6,12}$/;
+    var user = reg2.test("asdasdf12");
+    alert(user);
+</script>
+</body>
+</html>

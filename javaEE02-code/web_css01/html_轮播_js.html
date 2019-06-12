@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_轮播</title>
+</head>
+<body>
+<img id="pp" src="img/banner_1.jpg" alt="" width="100%">
+
+<script !src="">
+    var num = 1;
+  function show() {
+      num ++;
+      if(num>3){
+          num = 1;
+      }
+      var pp = document.getElementById("pp");
+      pp.src = "img/banner_"+num+".jpg";
+  }
+    setInterval(show,2000);//调用方法,后边带括号,需要用引号引起来
+</script>
+</body>
+</html>

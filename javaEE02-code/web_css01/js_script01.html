@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+    <script>
+        var a = null;
+        document.write(typeof(a)+"<br>");
+        /*var date = new Date();
+        document.write(date.toLocaleString()+"<br>")
+        alert(date);
+        alert(date.getTime());
+        document.write(Math.PI+"<br>")
+       document.write(Math.random()+"<br>");//返回0到1之间的随机数*/
+       var sum = Math.floor(Math.random()*100)+1;
+       document.write(sum);
+       var reg = new RegExp("^\\w{6,12}$");
+       var reg2 = /^\w{6,}$/;
+       var b = reg.test("z");
+        var b2 = reg.test("cc");
+       alert(b2);
+    </script>
+
+</head>
+
+<body>
+
+<script>
+
+    /*function add() {
+       alert(arguments[0]);
+       alert(arguments[1]);
+    }
+    add(2,3);
+
+    function fun() {
+        var sum = 0;
+        for(var i = 0; i <arguments.length;i++){
+            sum+=arguments[i];
+        }
+       return sum;
+    }
+    var sum = fun(1,2,3,4,5,6);
+    alert(sum);*/
+</script>
+</body>
+</html>

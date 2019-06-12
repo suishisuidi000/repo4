@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/jquery-3.3.1.min.js"></script>
+    <script>
+
+       function fun() {
+           $.get("/ajaxServlet","username=zhangsan&age=15",function (data) {
+               alert(data)
+           },"text")
+       }
+
+    </script>
+
+
+</head>
+<body>
+
+
+<input type="button" value="异步提交信息" onclick=fun()>
+</body>
+</html>

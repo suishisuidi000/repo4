@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text_打开关闭</title>
+</head>
+<body>
+            <input type="button" id="open_btn" value="打开窗口">
+            <input type="button" id="close_btn" value="关闭窗口">
+            <script !src="">
+                var op = document.getElementById("open_btn");
+                var newwindow;
+                op.onclick = function () {
+                     newwindow = open("img/banner_1.jpg");
+                }
+                var clo = document.getElementById("close_btn");
+                clo.onclick = function () {
+                   newwindow.close();
+                }
+            </script>
+</body>
+</html>

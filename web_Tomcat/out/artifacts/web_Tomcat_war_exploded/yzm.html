@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+             var img = document.getElementById("checkCode");
+             img.onclick=function () {
+                 var date = new Date().getTime();
+                 img.src ="/Servlet_yzm?"+date;
+             }
+            var yzm = document.getElementById("change");
+            yzm.onclick=function () {
+                var date = new Date().getTime();
+                yzm.src ="/Servlet_yzm?"+date;
+            }
+        }
+    </script>
+
+</head>
+<body>
+<img id="checkCode" src="/Servlet_yzm">
+<a id="change" href="/yzm.html">看不清,换一张?</a>
+
+</body>
+</html>

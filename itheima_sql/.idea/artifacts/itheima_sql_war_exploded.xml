@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="itheima_sql:war exploded">
+    <output-path>$PROJECT_DIR$/target/itheima_sql</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="itheima_sql" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.oracle:ojdbc14:10.2.0.4.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/itheima_sql/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="itheima_sql/web/Web" />
+    </root>
+  </artifact>
+</component>

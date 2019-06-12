@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="his" value="查看历史纪录">
+
+<script>
+        var his = document.getElementById("his");
+        his.onclick = function () {
+            alert(history.length);//显示当前窗口中的URL历史记录个数
+        }
+
+</script>
+
+</body>
+</html>

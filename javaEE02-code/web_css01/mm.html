@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            text-align: center;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <span id="time">5</span>秒后自动跳转首页...
+</p>
+      <script >
+                 var ss = 5;
+                function showTime() {
+                    ss --;
+                    if(ss<=0){
+                        location.href = "img/banner_1.jpg";
+                    }
+                    var time = document.getElementById("time");
+                    time.innerHTML = ss;
+                }
+               setInterval(showTime,1000);
+      </script>
+</body>
+</html>

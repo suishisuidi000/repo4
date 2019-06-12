@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="ppp" src="img/banner_1.jpg" alt="" width="100%">
+<script>
+    var num = 0 ;
+    function fun() {
+        num++;
+        if(num>3){
+            num = 1;
+        }
+        var ppp = document.getElementById("ppp");
+        ppp.src = "img/banner_"+num+".jpg";
+    }
+     setInterval(fun,2000);
+</script>
+</body>
+</html>
